@@ -1,6 +1,9 @@
-"This module uses Qt to open a file dialog box."
+
 
 def openfiledialog(DialogCaption=None, ReadFolder=None, FileFilter=None):
+"""
+This module uses Qt to open a file dialog box. Still needs some tweaking.
+"""
 	from PySide import QtCore, QtGui
 	import sys
 
