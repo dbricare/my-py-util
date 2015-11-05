@@ -1,7 +1,7 @@
 # Utilities
-Contains modules designed to simplify various functions.
+Contains modules designed to simplify various activities.
 #### Current list
 <ul>
-<li>File open dialog using Qt</li>
-<li>Search for pip installed packages</li>
+<li>FileOpen.py - File open dialog using Qt</li>
+<li>InstalledPkgs.py - Search for pip installed packages</li>
 </ul>
