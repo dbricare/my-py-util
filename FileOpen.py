@@ -1,9 +1,13 @@
+# Contains a function to open a file dialog box
 
 
-def openfiledialog(DialogCaption=None, ReadFolder=None, FileFilter=None):
-"""
-This function uses Qt to open a file dialog box. Still needs some tweaking.
-"""
+# if __name__ == '__main__':
+
+def openfdiag(DialogCaption=None, ReadFolder=None, FileFilter=None):
+
+	"""
+	This function uses Qt to open a file dialog box. Still needs some tweaking.
+	"""
 	from PySide import QtCore, QtGui
 	import sys
 
@@ -18,3 +22,6 @@ This function uses Qt to open a file dialog box. Still needs some tweaking.
 		raise ValueError('File list is empty.') 
 		
 	return (FileList)
+
+if __name__ == '__main__':
+	openfdiag()
