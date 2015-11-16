@@ -5,6 +5,7 @@ fyi, pip will install dependences
 
 import pip
 import argparse
+import os
 
 parser = argparse.ArgumentParser(description='Print list of installed packages')
 
@@ -34,5 +35,12 @@ elif type(args.find) == str:
 		[print(s) for s in chk]
 
 else:
-	[print(s) for s in installed_packages_list]
-	print('Total installed:',len(installed_packages_list))
+# 	height, width = os.popen('stty size', 'r').read().split()
+# 	cols = int(int(width)/32)
+# 	fmtlist = []
+# 	for i in range(cols):
+# 		fmtlist.append(installed_packages_list[i::cols])
+# 	print(fmtlist)
+	for odd,even in zip(installed_packages_list[::2],installed_packages_list[1::2]):
+		print('{:<32}'.format(odd),'{:<32}'.format(even))
+print('Total installed pkgs:',len(installed_packages_list))
