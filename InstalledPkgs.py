@@ -40,7 +40,18 @@ else:
 # 	fmtlist = []
 # 	for i in range(cols):
 # 		fmtlist.append(installed_packages_list[i::cols])
-# 	print(fmtlist)
-	for odd,even in zip(installed_packages_list[::2],installed_packages_list[1::2]):
-		print('{:<32}'.format(odd),'{:<32}'.format(even))
+# 	for j in range(	
+# 		for i in range(cols):
+# 			curr = 
+# 	[print('{:<32}'.format(fmtlist[:][i])) for i in range(cols)]
+	odds = installed_packages_list[::2]
+	evens = installed_packages_list[1::2]
+	if len(odds) == len(evens):
+		for odd,even in zip(odds, evens):
+			print('{:<32}'.format(odd),'{:<32}'.format(even))
+	else:
+		evens.append('')
+		for odd,even in zip(odds, evens):
+			print('{:<32}'.format(odd),'{:<32}'.format(even))
+
 print('Total installed pkgs:',len(installed_packages_list))
